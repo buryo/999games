@@ -1,0 +1,118 @@
+.table {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  outline: solid 1px transparent;
+  margin: 0px auto 0px auto;
+  min-height: 142px;
+  padding: 15px 15px 22px 15px;
+  display: inline-block;
+  z-index: 999;
+  position: relative;
+  white-space: nowrap;
+}
+
+.table-surface {
+  -webkit-box-shadow: 0px 40px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 40px 10px rgba(0, 0, 0, 0.2);
+  background: #dd992d;
+  background: -webkit-linear-gradient(#dd992d, #cd8c26);
+  background: url("/img/table.jpg") no-repeat center;
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  width: 100%;
+}
+
+.game-wrapper {
+  -webkit-perspective: 400px;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  perspective: 400px;
+  text-align: -webkit-center;
+  position: relative;
+  padding: 15px;
+}
+
+.game-wrapper:nth-child(3n+1) {
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+}
+
+.game-wrapper:nth-child(3n+2) {
+  border-bottom: 1px solid;
+}
+
+.game-wrapper:nth-child(3n+3) {
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+}
+
+.table-wrapper {
+  opacity: 1;
+  -webkit-transform: rotateX(20deg);
+          transform: rotateX(20deg);
+  width: 274px;
+  margin-top: 10px;
+  min-height: 142px;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  z-index: 9999;
+  position: relative;
+}
+
+.table-edge {
+  width: 250px;
+  margin: 0 auto 10px auto;
+  background: #ac741c;
+  height: 15px;
+  -webkit-transform: rotateX(-40deg);
+          transform: rotateX(-40deg);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  z-index: 2;
+}
+
+.table-leg {
+  width: 24px;
+  height: 30px;
+  background: #84570f;
+  position: absolute;
+  top: 15px;
+}
+
+.table-leg:first-child {
+  left: 20px;
+}
+
+.table-leg:last-child {
+  right: 20px;
+}
+
+.name-tags {
+  margin-top: 20px;
+  z-index: 50;
+  font-size: 17px;
+  color: #ffffff;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8px;
+}
+
+.name-tags span:nth-child(1) {
+  background: url("/img/metal-nametag.png") no-repeat center;
+}
+
+.name-tags span:nth-child(2) {
+  background: url("/img/metal-nametag.png") no-repeat center;
+}
+
+.name-tags span:nth-child(3) {
+  background: url("/img/metal-nametag.png") no-repeat center;
+}
+
+.name-tags span:nth-child(4) {
+  background: url("/img/metal-nametag.png") no-repeat center;
+}
+

@@ -1,0 +1,82 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+input {
+  color: #ffffff !important;
+  font-size: 1.3rem !important;
+}
+
+.btn:hover{
+  color: #ffffff !important;
+  background-color: #6cb2eb !important;
+  border-color: #6cb2eb !important;
+}
+
+.main-content{
+  color: #ffffff;
+}
+
+.main-content p{
+  font-size: 1rem;
+}
+
+.card{
+  min-height: -webkit-fill-available;
+  background-color: #0e1a3591;
+}
+
+.nav-login{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.table.table a {
+  color: #5584ff !important;
+}
+
+.table.table td, .table.table th{
+  padding: 0.85rem;
+
+}
+
+.md-form label{
+  font-size: 1.2rem !important;
+}
+
+.md-form {
+  margin-bottom: 2.5rem !important;
+}
+/* Helper classes*/
+.curser-pointer{
+  cursor: pointer;
+}
+
+/* tablet*/
+@media screen and (max-width: 992px) {
+  .main-content{
+    padding: 20px;
+  }
+
+  .card{
+    min-height: 800px;
+  }
+}
+
+/* phone */
+@media screen and (max-width: 560px) {
+  .main-content{
+    padding: 15px;
+  }
+
+  .card{
+    min-height: 600px;
+  }
+}
